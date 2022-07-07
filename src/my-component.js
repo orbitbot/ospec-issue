@@ -1,3 +1,5 @@
+const m = require('mithril')
+
 function MyComponent() {
   return {
       view: function (vnode) {

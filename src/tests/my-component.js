@@ -6,6 +6,6 @@ var MyComponent = require("../my-component.js")
 o.spec("MyComponent", function() {
     o("things are working", function() {
         var out = mq(MyComponent, {text: "What a wonderful day to be alive!"})
-        out.should.contain("day")
+        o(out.should.contain("day")).equals(true)
     })
 })
