@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "ospec --require ./test-setup.js"
+    "test": "ospec --preload ./test-setup.js"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "mithril": "^2.2.2"
+  },
   "devDependencies": {
     "jsdom": "^20.0.0",
-    "mithril": "^2.2.2",
     "mithril-query": "^4.0.1",
     "ospec": "^4.1.6"
   }
